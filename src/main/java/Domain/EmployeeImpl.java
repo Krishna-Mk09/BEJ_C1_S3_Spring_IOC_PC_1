@@ -22,5 +22,9 @@ public class EmployeeImpl {
         ApplicationContext context = new AnnotationConfigApplicationContext(EmployeeConfig.class);
         Employee employee1 = (Employee) context.getBean("empBean1");
         System.out.println(employee1);
+        Employee employee2 = (Employee) context.getBean("empBean2");
+        System.out.println(employee2);
+        Employee employee3 = (Employee) context.getBean("empBean3");
+        System.out.println(employee3);
     }
 }
