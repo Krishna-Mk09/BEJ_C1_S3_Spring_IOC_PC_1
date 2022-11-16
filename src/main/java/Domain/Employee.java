@@ -23,4 +23,36 @@ public class Employee {
         MobileNumber = mobileNumber;
         this.position = position;
     }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public long getMobileNumber() {
+        return MobileNumber;
+    }
+
+    public void setMobileNumber(long mobileNumber) {
+        MobileNumber = mobileNumber;
+    }
+
+    public String getPosition() {
+        return position;
+    }
+
+    public void setPosition(String position) {
+        this.position = position;
+    }
 }
