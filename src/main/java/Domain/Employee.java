@@ -7,11 +7,14 @@
 
 package Domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Employee {
     private String employeeName;
     private int employeeId;
     private long MobileNumber;
     private String position;
+    @Autowired
     private Department employeeDepartment;
 
     public Employee() {
