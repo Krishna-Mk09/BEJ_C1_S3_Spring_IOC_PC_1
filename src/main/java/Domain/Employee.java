@@ -5,7 +5,6 @@
  *
  */
 
-
 package Domain;
 
 public class Employee {
@@ -13,15 +12,17 @@ public class Employee {
     private int employeeId;
     private long MobileNumber;
     private String position;
+    private Department employeeDepartment;
 
     public Employee() {
     }
 
-    public Employee(String employeeName, int employeeId, long mobileNumber, String position) {
+    public Employee(String employeeName, int employeeId, long mobileNumber, String position, Department employeeDepartment) {
         this.employeeName = employeeName;
         this.employeeId = employeeId;
         MobileNumber = mobileNumber;
         this.position = position;
+        this.employeeDepartment = employeeDepartment;
     }
 
     public String getEmployeeName() {
@@ -56,13 +57,16 @@ public class Employee {
         this.position = position;
     }
 
+    public Department getEmployeeDepartment() {
+        return employeeDepartment;
+    }
+
+    public void setEmployeeDepartment(Department employeeDepartment) {
+        this.employeeDepartment = employeeDepartment;
+    }
+
     @Override
     public String toString() {
-        return "Employee{" +
-                "employeeName='" + employeeName + '\'' +
-                ", employeeId=" + employeeId +
-                ", MobileNumber=" + MobileNumber +
-                ", position='" + position + '\'' +
-                '}';
+        return "Employee{" + "employeeName='" + employeeName + '\'' + ", employeeId=" + employeeId + ", MobileNumber=" + MobileNumber + ", position='" + position + '\'' + ", employeeDepartment=" + employeeDepartment + '}';
     }
 }
