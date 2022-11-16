@@ -9,17 +9,21 @@
 package Domain;
 
 public class Department {
+    // Declaring the variables.
     private int departmentCode;
     private String type;
 
+    // A default constructor.
     public Department() {
     }
 
+    // This is a constructor.
     public Department(int departmentCode, String type) {
         this.departmentCode = departmentCode;
         this.type = type;
     }
 
+    // This is a getter and setter method.
     public int getDepartmentCode() {
         return departmentCode;
     }
@@ -36,6 +40,7 @@ public class Department {
         this.type = type;
     }
 
+    // Overriding the toString method.
     @Override
     public String toString() {
         return "Department{" + "departmentCode=" + departmentCode + ", type='" + type + '\'' + '}';

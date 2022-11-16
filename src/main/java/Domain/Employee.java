@@ -10,16 +10,20 @@ package Domain;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Employee {
+    // These are the attributes of the class.
     private String employeeName;
     private int employeeId;
     private long MobileNumber;
     private String position;
+    // Injecting the Department object into the Employee object.
     @Autowired
     private Department employeeDepartment;
 
+    // A default constructor.
     public Employee() {
     }
 
+    // This is a constructor.
     public Employee(String employeeName, int employeeId, long mobileNumber, String position, Department employeeDepartment) {
         this.employeeName = employeeName;
         this.employeeId = employeeId;
@@ -28,6 +32,7 @@ public class Employee {
         this.employeeDepartment = employeeDepartment;
     }
 
+    // This is a getter and setter method.
     public String getEmployeeName() {
         return employeeName;
     }
@@ -68,6 +73,7 @@ public class Employee {
         this.employeeDepartment = employeeDepartment;
     }
 
+    // This is a method that is used to print the object.
     @Override
     public String toString() {
         return "Employee{" + "employeeName='" + employeeName + '\'' + ", employeeId=" + employeeId + ", MobileNumber=" + MobileNumber + ", position='" + position + '\'' + ", employeeDepartment=" + employeeDepartment + '}';
